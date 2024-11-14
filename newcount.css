@@ -3,24 +3,62 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     list-style: none;
-} 
+}
 
-body{
+body {
     background-image: url(pexels-pramodtiwari-13971179.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#txt1{
+#txt1 {
     color: grey;
 }
 
-h1{
+h1 {
     color: aliceblue;
     letter-spacing: 1px;
     font-weight: bold;
 }
 
-#botao{
+#botao {
     cursor: pointer;
+}
+
+
+
+
+
+@media only screen and (max-width:860px) {
+
+    #nome {
+        gap: 14px;
+        justify-content: center;
+    }
+
+    #pn {
+        width: 40%;
+    }
+
+    #email{
+        width: 84%;
+    }
+
+    #password{
+        width: 84%;
+    }
+
+    #bt{
+        justify-content: center;
+    }
+
+    #botao{
+        padding: 3%;
+        width: 38%;
+    }
+
+    section {
+        text-align: center;
+    }
+
 }
