@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+body{
+    background-image: url(pexels-pramodtiwari-13971179.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#txt1{
+    color: grey;
+}
+
+h1{
+    color: aliceblue;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+#botao{
+    cursor: pointer;
+}
