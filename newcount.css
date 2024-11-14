@@ -21,14 +21,40 @@ h1 {
     font-weight: bold;
 }
 
-#botao {
+#pn {
+    width: 24%;
+}
+
+#email {
+    width: 50%;
+}
+
+#password {
+    width: 50%;
+}
+
+#botoes {
+    font-weight: bold;
+    position: relative;
+    left: 3.5%;
+}
+
+#botao1,
+#botao2 {
+    width: 20%;
+}
+
+#botao1 {
     cursor: pointer;
+    background-color: gray;
+    color: white;
+    border: solid red;
 }
 
 
 
 
-
+/* responsividade */
 @media only screen and (max-width:860px) {
 
     #nome {
@@ -37,24 +63,26 @@ h1 {
     }
 
     #pn {
-        width: 40%;
+        width: 46%;
     }
 
-    #email{
-        width: 84%;
+    #email {
+        width: 96.5%;
     }
 
-    #password{
-        width: 84%;
+    #password {
+        width: 96.5%;
     }
 
-    #bt{
+    #botoes {
         justify-content: center;
+        left: 0;
     }
 
-    #botao{
-        padding: 3%;
-        width: 38%;
+    #botao1,
+    #botao2 {
+        padding: 2%;
+        width: 46.5%;
     }
 
     section {
