@@ -3,10 +3,10 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     list-style: none;
-}
+} 
 
 body{
-    background-image: url(pexels-pramodtiwari-13971179.jpg);
+    background-image: url(../midia/pexels-pramodtiwari-13971179.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
