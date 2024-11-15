@@ -28,7 +28,7 @@ h1 {
 }
 
 input:focus{
-    color: white;
+    color: black;
     font-weight: bold;
 }
 
