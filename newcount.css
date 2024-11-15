@@ -11,7 +11,7 @@ body {
     background-size: cover;
 }
 
-a{
+a {
     color: blue;
     text-decoration: underline;
 }
@@ -27,8 +27,8 @@ h1 {
     text-shadow: 0 0 3px;
 }
 
-input:focus{
-    color: black;
+input:focus {
+   color: white;
     font-weight: bold;
 }
 
@@ -38,32 +38,38 @@ input:focus{
 
 #pn {
     background-color: rgb(61, 75, 88);
+    color: white;
     width: 24.5%;
     transition: 0.5s;
 }
 
-#pn:focus{
-background-color: white;
+#pn:focus {
+    background-color: white;
+    color: black;
 }
 
 #email {
     background-color: rgb(61, 75, 88);
+    color: white;
     width: 50%;
     transition: 0.5s;
 }
 
-#email:focus{
+#email:focus {
     background-color: white;
+    color: black;
 }
 
 #password {
     background-color: rgb(61, 75, 88);
+    color: white;
     width: 50%;
     transition: 0.5s;
 }
 
-#password:focus{
+#password:focus {
     background-color: white;
+    color: black;
 }
 
 #botoes {
@@ -85,7 +91,7 @@ background-color: white;
 }
 
 #botao2 {
-  background-color: rgb(46, 96, 183);
+    background-color: rgb(46, 96, 183);
     color: white;
 }
 
