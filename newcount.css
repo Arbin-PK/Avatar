@@ -11,6 +11,11 @@ body {
     background-size: cover;
 }
 
+a{
+    color: blue;
+    text-decoration: underline;
+}
+
 #txt1 {
     color: grey;
 }
@@ -19,18 +24,46 @@ h1 {
     color: aliceblue;
     letter-spacing: 1px;
     font-weight: bold;
+    text-shadow: 0 0 3px;
+}
+
+input:focus{
+    color: white;
+    font-weight: bold;
+}
+
+#nome {
+    gap: 1%;
 }
 
 #pn {
-    width: 24%;
+    background-color: rgb(61, 75, 88);
+    width: 24.5%;
+    transition: 0.5s;
+}
+
+#pn:focus{
+background-color: white;
 }
 
 #email {
+    background-color: rgb(61, 75, 88);
     width: 50%;
+    transition: 0.5s;
+}
+
+#email:focus{
+    background-color: white;
 }
 
 #password {
+    background-color: rgb(61, 75, 88);
     width: 50%;
+    transition: 0.5s;
+}
+
+#password:focus{
+    background-color: white;
 }
 
 #botoes {
@@ -46,9 +79,14 @@ h1 {
 
 #botao1 {
     cursor: pointer;
-    background-color: gray;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border: solid gray;
+}
+
+#botao2 {
+  background-color: rgb(46, 96, 183);
     color: white;
-    border: solid red;
 }
 
 
@@ -58,11 +96,12 @@ h1 {
 @media only screen and (max-width:860px) {
 
     #nome {
-        gap: 14px;
-        justify-content: center;
+        gap: 0.5%;
+        margin: auto;
     }
 
     #pn {
+        margin: auto;
         width: 46%;
     }
 
