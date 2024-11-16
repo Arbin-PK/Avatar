@@ -6,6 +6,9 @@
 }
 
 body {
+    overflow-y: hidden;
+    user-select: none;
+    background-color: black;
     background-image: url(pexels-pramodtiwari-13971179.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,6 +17,29 @@ body {
 a {
     color: blue;
     text-decoration: underline;
+}
+
+#menu {
+    background-color: #dadff710;
+    box-shadow: 0px 2px 1px #29767544;
+}
+
+.hb {
+    position: relative;
+    right: 46%;
+    display: none;
+    cursor: pointer;
+    width: 40px;
+}
+
+.hb div {
+    background-color: azure;
+    height: 4px;
+    margin: 4px;
+}
+
+li {
+    cursor: pointer;
 }
 
 #txt1 {
@@ -28,8 +54,7 @@ h1 {
 }
 
 input:focus {
-   color: white;
-    font-weight: bold;
+    outline: solid #236766;
 }
 
 #nome {
@@ -45,7 +70,7 @@ input:focus {
 
 #pn:focus {
     background-color: white;
-    color: black;
+    color: #236766;
 }
 
 #email {
@@ -85,14 +110,19 @@ input:focus {
 
 #botao1 {
     cursor: pointer;
-    background-color: white;
+    background-color: #DADFF7;
     color: rgb(0, 0, 0);
     border: solid gray;
 }
 
 #botao2 {
-    background-color: rgb(46, 96, 183);
+    background-color: #236766;
     color: white;
+    transition: 0.3s;
+}
+
+#botao2:hover {
+    box-shadow: 0px 0px 14px #236766;
 }
 
 
@@ -100,6 +130,19 @@ input:focus {
 
 /* responsividade */
 @media only screen and (max-width:860px) {
+
+    body {
+        overflow-y: visible;
+        height: 100%;
+    }
+
+    .hb {
+        display: block;
+    }
+
+    #lista-principal {
+        display: none;
+    }
 
     #nome {
         gap: 0.5%;
@@ -121,12 +164,13 @@ input:focus {
 
     #botoes {
         justify-content: center;
+        font-size: small;
         left: 0;
     }
 
     #botao1,
     #botao2 {
-        padding: 2%;
+        padding: 4%;
         width: 46.5%;
     }
 

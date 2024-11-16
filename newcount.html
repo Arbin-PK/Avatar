@@ -4,9 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-
-    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="newcount.css">
 
@@ -17,11 +14,22 @@
 
     <header>
 
-        <nav>
-            <ul class="text-cyan-50 p-10 flex justify-center gap-10">
 
-                <li class="cursor-pointer">
-                    Home</li>
+
+        <nav>
+
+            <ul id="menu" class="text-cyan-50 p-10 flex justify-center gap-10">
+
+                <div class="hb">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <li id="lista-principal">About</li>
+                <li id="lista-principal">Home</li>
+                <li id="lista-principal">Contact</li>
+
             </ul>
         </nav>
 
@@ -38,41 +46,40 @@
 
             <p id="txt1">Already A Member? <a href="#">Logi In</a> </p> <br> <br>
 
-            <!-- div do primeiro e ultimo nome -->
-            <div id="nome" class="flex">
+            <form action="">
 
-                <input id="pn" type="text" placeholder="First name" class=" rounded-xl p-5"> <input id="pn" type="text" placeholder="Last name"
-                    class="rounded-xl p-5">
-            </div> <br>
+                <!-- div do primeiro e ultimo nome -->
+                <div id="nome" class="flex">
 
-            <!-- email -->
-            <div>
-                <input id="email" type="email" placeholder="Email" class="rounded-xl p-5">
-            </div> <br>
+                    <input id="pn" type="text" required placeholder="First name" class=" rounded-xl p-5"> <input id="pn"
+                        type="text" required placeholder="Last name" class="rounded-xl p-5">
+                </div> <br>
 
-            <!-- palavra passe -->
-            <div>
-                <input id="password" type="password" placeholder="Password" class="rounded-xl w-96 p-5">
-            </div> <br>
+                <!-- email -->
+                <div>
+                    <input id="email" type="email" required placeholder="Email" class="rounded-xl p-5">
+                </div> <br>
 
-            <!-- os dois botoes -->
-            <div id="botoes" class="flex gap-6 m-2">
+                <!-- palavra passe -->
+                <div>
+                    <input id="password" type="password" required placeholder="Password" class="rounded-xl w-96 p-5">
+                </div> <br>
 
-                <button  id="botao1" type="button" class="p-3 rounded-2xl "> Change method</button>
+                <!-- os dois botoes -->
+                <div id="botoes" class="flex gap-6 m-2">
 
-                <button  id="botao2" type="button" class="p-3 rounded-2xl "> Create account</button>
-            </div> <br>
+                    <button id="botao1" type="button" class="p-3 rounded-2xl "> Change method</button>
+
+                    <button id="botao2" type="submit" class="p-3 rounded-2xl "> Create account</button>
+                </div> <br>
+
+
         </div>
+        </form>
 
     </section>
 
 
-
-
-
-
-
-    
 </body>
 
 </html>

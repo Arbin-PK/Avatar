@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+header {
+    background-color: aqua;
+    height: 95vh;
+}
+
+nav {
+    background-color: black;
+    padding: 30px;
+}
+
+ul {
+    display: flex;
+    background-color: blue;
+    gap: 3%;
+}
+
+li {
+    position: relative;
+    left: 14%;
+}
+
+.logo {
+    position: relative;
+    left: 6%;
+}
+
+button {
+    background-color: brown;
+    padding: 10px;
+    position: absolute;
+    right: 10%;
+}
+
+#txt2 {
+    letter-spacing: 2px;
+    font-weight: bold;
+    position: relative;
+    right: 8%;
+}
+
+span {
+    color: rgb(18, 110, 159);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsividade */
+@media only screen and (max-width:860px) {
+
+
+    .list {
+        display: none;
+    }
+}
