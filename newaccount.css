@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+body {
+    overflow-y: hidden;
+    user-select: none;
+    background-color: black;
+    background-image: url(pexels-pramodtiwari-13971179.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    color: blue;
+    text-decoration: underline;
+}
+
+#menu {
+    background-color: #dadff710;
+    box-shadow: 0px 2px 1px #29767544;
+}
+
+.hb {
+    position: relative;
+    right: 46%;
+    display: none;
+    cursor: pointer;
+    width: 40px;
+}
+
+.hb div {
+    background-color: azure;
+    height: 4px;
+    margin: 4px;
+}
+
+li {
+    cursor: pointer;
+}
+
+#txt1 {
+    color: grey;
+}
+
+h1 {
+    color: aliceblue;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-shadow: 0 0 3px;
+}
+
+input:focus {
+    outline: solid #236766;
+}
+
+#nome {
+    gap: 1%;
+}
+
+#pn {
+    background-color: rgb(61, 75, 88);
+    color: white;
+    width: 24.5%;
+    transition: 0.5s;
+}
+
+#pn:focus {
+    background-color: white;
+    color: #236766;
+}
+
+#email {
+    background-color: rgb(61, 75, 88);
+    color: white;
+    width: 50%;
+    transition: 0.5s;
+}
+
+#email:focus {
+    background-color: white;
+    color: black;
+}
+
+#password, #password2 {
+    background-color: rgb(61, 75, 88);
+    color: white;
+    width: 50%;
+    transition: 0.5s;
+}
+
+#password2:focus {
+    background-color: white;
+    color: black;
+}
+
+#password:focus {
+    background-color: white;
+    color: black;
+}
+
+#botoes {
+    font-weight: bold;
+    position: relative;
+    left: 3.5%;
+}
+
+#botao1,
+#botao2 {
+    width: 20%;
+}
+
+#botao1 {
+    cursor: pointer;
+    background-color: #DADFF7;
+    color: rgb(0, 0, 0);
+    border: solid gray;
+}
+
+#botao2 {
+    background-color: #236766;
+    color: white;
+    transition: 0.3s;
+}
+
+#botao2:hover {
+    box-shadow: 0px 0px 14px #236766;
+}
+
+
+
+
+/* responsividade */
+@media only screen and (max-width:860px) {
+
+    body {
+        overflow-y: visible;
+        height: 100%;
+    }
+
+    .hb {
+        display: block;
+    }
+
+    #lista-principal {
+        display: none;
+    }
+
+    #nome {
+        gap: 0.5%;
+        margin: auto;
+    }
+
+    #pn {
+        margin: auto;
+        width: 46%;
+    }
+
+    #email {
+        width: 96.5%;
+    }
+
+    #password, #password2 {
+        width: 96.5%;
+    }
+
+    #botoes {
+        justify-content: center;
+        font-size: small;
+        left: 0;
+    }
+
+    #botao1,
+    #botao2 {
+        padding: 4%;
+        width: 46.5%;
+    }
+
+    section {
+        text-align: center;
+    }
+
+}

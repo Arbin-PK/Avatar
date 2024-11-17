@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="newaccount.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+
+
+
+        <nav>
+
+            <ul id="menu" class="text-cyan-50 p-10 flex justify-center gap-10">
+
+                <div class="hb">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <li id="lista-principal">About</li>
+                <li id="lista-principal">Home</li>
+                <li id="lista-principal">Contact</li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <section class="m-14 mt-20">
+
+        <div>
+            <p id="txt1">Start for free</p>
+            <h1 class="text-3xl
+            ">Create new account
+            </h1> <br>
+
+            <p id="txt1">Already A Member? <a href="#">Logi In</a> </p> <br> <br>
+
+            <form action="">
+
+                <!-- div do primeiro e ultimo nome -->
+                <div id="nome" class="flex">
+
+                    <input id="pn" type="text" required placeholder="First name" class=" rounded-xl p-5"> <input id="pn"
+                        type="text" required placeholder="Last name" class="rounded-xl p-5">
+                </div> <br>
+
+                <!-- email -->
+                <div>
+                    <input id="email" type="email" required placeholder="Email" class="rounded-xl p-5">
+                </div> <br>
+
+                <!-- palavra passe -->
+                <div>
+                    <input id="password" type="password" required placeholder="Password" class="rounded-xl w-96 p-5">
+                </div> <br>
+
+                <div>
+                    <input id="password2" type="password" required placeholder="Confirm Password"
+                        class="rounded-xl w-96 p-5">
+                </div> <br>
+
+                <!-- os dois botoes -->
+                <div id="botoes" class="flex gap-6 m-2">
+
+                    <button id="botao1" type="button" class="p-3 rounded-2xl "> Change method</button>
+
+
+                    <button id="botao2" onclick="send()" type="submit" class="p-3 rounded-2xl "> Create
+                        account</button>
+                </div> <br>
+
+
+        </div>
+        </form>
+
+    </section>
+
+
+    <script>
+
+
+        function send() {
+
+            var password = document.getElementById("password")
+            var confirm = document.getElementById("password2")
+            var botao = document.getElementById("botao2")
+
+            if (password.value === confirm.value) {
+                botao.disabled = false
+            }
+            else {
+                botao.disabled = true
+                confirm.style.backgroundColor = 'rgb(203, 99, 99)'
+            }
+            
+            password.addEventListener('input', send)
+            confirm.addEventListener('input', send)
+
+        }
+
+        
+
+        
+    </script>
+
+</body>
+
+</html>
